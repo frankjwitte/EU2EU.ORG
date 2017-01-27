@@ -6,34 +6,11 @@
     <link rel="stylesheet" href="node_modules/vue-material/dist/vue-material.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-    <style>
-    table {
-        width: 100%;
-    }
-    td {
-        height: 120px;
-        text-align: center;
-        border: 2px solid lightgray;
-    }
-    .bar {
-        margin: 20px;
-        padding: 10px 20px;
-        border-radius: 20px;
-        background-color: #eee;
-    }
-    .list-inline li {
-        list-style: none;
-        display: inline;
-        padding-left: 20%;
-    }
-    .redtext {
-        color: red;
-    }
-    .margin{margin:auto;}
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <div id="root">
+    <div id="app">
         <md-toolbar>
             <h1 class="md-title">Company Concept</h1>
         </md-toolbar>
@@ -72,6 +49,10 @@
             </md-tab>
         </md-tabs>
         
+        <!--<md-snackbar md-position="bottom left" ref="snackbar" md-duration="4000">
+            <span>Cannot delete.</span>
+            <md-button class="md-accent" md-theme="light-blue" @click="$refs.snackbar.close()">Close</md-button>
+        </md-snackbar>-->
     </div>
 
     <!-- script src="//unpkg.com/vue@2.1.7/dist/vue.js"></script -->
@@ -80,6 +61,8 @@
     <!--<script src="//unpkg.com/vue-material@latest"></script>-->
     <script src="node_modules/vue-material/dist/vue-material.js"></script>
 
+    <script src="components/xpn-grid.js"></script>
+    <script src="components/xpn-element.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
