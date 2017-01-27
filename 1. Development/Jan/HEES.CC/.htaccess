@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Adminbereich"
+AuthUserFile /data/www/b6/1336/html/hees/.htpasswd
+require valid-user
